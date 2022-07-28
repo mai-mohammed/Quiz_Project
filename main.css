@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ------------ Start Global Style ------------ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-fontFamily: "Poppins", sans-serif;
+  --text-color: #464c54;
+}
+
+body {
+  background-image: linear-gradient(90deg, #d9afd9, #97d9e1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-fontFamily);
+  color: var(--text-color);
+}
+
+main.container {
+  width: 50rem;
+  height:43rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------ End Global Style ------------ */
+
+/* ------------ Start quiz-info Style ------------ */
+.quiz-info {
+  display: flex;
+  padding: 1.3rem;
+}
+.quiz-info .category {
+  flex: 1;
+}
+
+.quiz-info .count {
+  flex: 1;
+  text-align: right;
+}
+
+/* ------------ End quiz-info Style ------------ */
+
+/* ----------- Start Quiz section Styles ----------- */
+.quiz-container {
+  border: 1px solid #464c5429;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+.quiz-area {
+  padding: 1.3rem;
+  margin-top: 1.2rem;
+}
+
+.answers-area {
+  padding: 0 1.3rem 1.3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.answers-area .answer {
+  padding: 1rem;
+}
+.answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #DDD;
+}
+
+.answers-area .answer input[type="radio"]:checked + label {
+  color: #584c8d;
+}
+
+.answers-area .answer label {
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+/* ----------- End  Quiz section Styles ----------- */
+
+/* ----------- Start Last section Styles ----------- */
+.submit-button {
+  background-color: #c3bddc;
+  cursor: pointer;
+  width: 20%;
+  margin: 2rem auto;
+  padding: 1.2rem 0.5rem;
+  border: 1px solid #DDD ;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: var(--main-fontFamily);
+}
+.submit-button:focus {
+  outline: none;
+}
+
+.bullets {
+    display:  flex ;
+    padding : 1.3rem;
+    border-top: 1px solid #DDD;
+}
+
+.spans{
+    flex: 1 ;
+    display:  flex ; 
+}
+.spans span {
+  width : 1.3rem ;
+  height : 1.3rem ;
+  background-color: #DDD; 
+  border-radius: 50% ;
+  margin-right: 0.5rem;
+}
+.spans span.on {
+    background-color: #c3bddc ;
+}
+
+.results{
+     padding : 0 1.3rem;
+}
+
+.results span{
+    font-weight : bold; 
+}
+.results span.bad{
+    color : #de5353 ;
+}
+.results span.good{
+    color : #47b63d ;
+
+}
+.results span.perfect{
+    color : #21a1d4 ;
+}
+
+/* ----------- End Last section Styles ----------- */
